@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Invoice Generator</title>
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container">
+        <h1>Invoice Generator</h1>
+        <p>Thanks for choosing GoodCorp, LLC!</p>
+      </div>
+    </div>
+    <div class="container main-content">
+      <div class="buttons-container">
+        <button id="btn">Car wash: £10</button>
+        <button id="btn">Mow Lawn: £20</button>
+        <button id="btn">Pull weeds: £15</button>
+      </div>
+      <div class="services-label-top">
+        <p>task</p>
+        <p>total</p>
+      </div>
+      <div id="services-collection"></div>
+      <div class="services-label-bottom">
+        <div class="notes">
+          <p class="notes">notes</p>
+          <input type="text" id="notes" />
+        </div>
+        <div class="total">
+          <p>total amount</p>
+          <p id="total-amount">£0</p>
+        </div>
+      </div>
+      <button id="send-btn" class="send-btn">
+        <i class="fa-solid fa-envelope"></i>Send invoice
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
